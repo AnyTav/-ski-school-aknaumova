@@ -33,6 +33,11 @@ body {
 
 }
 
+.container {
+  width: 1278px;
+  margin: 0 auto;
+}
+
 a {
   font-family: inherit;
 }
@@ -41,9 +46,19 @@ a {
 
 .header {
   background-color: #66D1FF;
+  padding-top: 31px;
+  padding-bottom: 30.24px;
+
 }
 
 .header-link {
+  padding-top: 8px;
+  padding-left: 41px;
+  padding-bottom: 8px;
+  padding-right: 41px;
+
+
+  margin-right: 227px;
   font-size: 28px;
   line-height: 34px;
   color: #060D10;
@@ -53,22 +68,34 @@ a {
 
 .header-logo {
 
+  width: 295.5px;
+  height: 50.76px;
+
 
 }
 
 .header-phone {
+  margin-left: 223.5px;
+
   font-size: 24px;
   line-height: 29px;
   text-decoration: none;
+
 }
 
 /* head */
 
 .head {
 
+  background-image: url(../images/promo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
 }
 
 .head-caption {
+  padding: 240px 0px 60px 0px;
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
   font-size: 60px;
@@ -79,6 +106,9 @@ a {
 }
 
 .head-desc {
+  padding-left: 190px;
+  padding-bottom: 260px;
+  padding-right: 190px;
   font-size: 32px;
   line-height: 39px;
   text-align: center;
@@ -93,6 +123,7 @@ a {
 }
 
 .benefits-heading {
+  margin: 170px 0 100px 0;
   font-family: 'Oswald', sans-serif;
   font-size: 48px;
   line-height: 80px;
@@ -130,6 +161,8 @@ a {
 }
 
 .slogan-heading {
+  margin-top: 170px;
+  margin-bottom: 60px;
   font-family: 'Oswald', sans-serif;
   font-size: 48px;
   line-height: 80px;
@@ -140,18 +173,31 @@ a {
 
 
 .slogan-link{
+
+
+
   font-size: 36px;
   line-height: 44px;
   font-weight: 500;
   text-decoration: none;
-  text-align: center;
+
+
 }
 
-.slogan-container {
+.slogan-text {
+  padding: 20px 107px 22px 108px;
+
+  margin-left: 385px;
+  margin-right: 382px;
+
+  text-align: center;
+  border: 1px solid #000;
 
 }
 
 .slogan-pic {
+  width: 297px;
+  margin-top: 130px;
 
 }
 
@@ -164,6 +210,8 @@ a {
 
 .footer{
   background-color: #060D10;
+  margin-top: 180px;
+  padding: 35px 0;
 
 }
 
@@ -183,9 +231,18 @@ a {
 .social-item {
 
 }
+.social-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/icon-twitter.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 .social-text {
   text-align: center;
+  opacity: 0;
 
 }
 
