@@ -1,37 +1,44 @@
-/* montserrat-regular - latin */
+/* montserrat-regular - cyrillic */
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('../fonts/montserrat-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/montserrat-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('../fonts/montserrat-v18-cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v18-cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-/* montserrat-500 - latin */
+/* montserrat-500 - cyrillic */
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   src: local(''),
-       url('../fonts/montserrat-v18-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/montserrat-v18-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('../fonts/montserrat-v18-cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v18-cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-/* oswald-500 - latin */
+/* oswald-500 - cyrillic */
 @font-face {
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 500;
   src: local(''),
-       url('../fonts/oswald-v40-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/oswald-v40-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('../fonts/oswald-v40-cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/oswald-v40-cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+
+* {
+  box-sizing: border-box;
+}
+
+/* -----------BODY---------------- */
 body {
   font-family: 'Montserrat';
   font-weight: 500;
   color: #060D10;
 
 }
+/* ------------CONTAINER------------- */
 
 .container {
   width: 1278px;
@@ -42,28 +49,25 @@ a {
   font-family: inherit;
 }
 
-/* -----header ------*/
+/* --------------header ---------------*/
 
 .header {
   background-color: #66D1FF;
-  padding-top: 31px;
-  padding-bottom: 30.24px;
+  padding: 30px 0;
 
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
 }
 
 .header-bg-veil {
   background-color: rgba(6, 13, 16, 0.25);
-
 }
 
 .header-link {
-  padding-top: 8px;
-  padding-left: 41px;
-  padding-bottom: 8px;
-  padding-right: 41px;
-
-
-  margin-right: 227px;
+  padding: 8px 41px;
   font-size: 28px;
   line-height: 34px;
   color: #060D10;
@@ -73,22 +77,17 @@ a {
 
 .header-logo {
 
-  width: 295.5px;
-  height: 50.76px;
 
-
-}
+ }
 
 .header-phone {
-  margin-left: 223.5px;
-
   font-size: 24px;
   line-height: 29px;
   text-decoration: none;
 
 }
 
-/* head */
+/* --------------head-------------- */
 
 .head {
 
@@ -100,6 +99,7 @@ a {
 }
 
 .head-caption {
+  margin: 0;
   padding: 240px 0px 60px 0px;
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
@@ -110,7 +110,9 @@ a {
   text-shadow: 1px 1px 2px #060D10;
 }
 
+
 .head-desc {
+  margin: 0;
   padding-left: 190px;
   padding-bottom: 260px;
   padding-right: 190px;
@@ -121,7 +123,7 @@ a {
   text-shadow: 1px 1px 2px #060D10;
 
 }
-/* benefits */
+/* ---------benefits-------------- */
 
 .benefits {
 
@@ -138,11 +140,16 @@ a {
 }
 
 .benefits-list {
+  margin-bottom: 170px;
+  display: flex;
+  flex-wrap: wrap;
+
   list-style: none;
 
 }
 
 .benefits-item {
+  width: 33.33%;
 
 }
 
@@ -160,7 +167,7 @@ a {
   font-weight: normal;
 }
 
-/* Slogan */
+/* ----------Slogan----------- */
 
 .slogan{
 
@@ -202,6 +209,11 @@ a {
 
 }
 
+.slogan-pic-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
 .slogan-pic {
   width: 297px;
   margin-top: 130px;
@@ -214,7 +226,7 @@ a {
   line-height: 22px;
 }
 
-/* Footer */
+/* -----------------Footer----------------- */
 
 .footer{
   background-color: #060D10;
@@ -223,6 +235,40 @@ a {
 
 }
 
+ .footer-wrap {
+  display: flex;
+  align-items: center;
+
+}
+
+.icons-wrap {
+
+}
+
+.footer-link {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+}
+
+
+.social-icons {
+  list-style: none;
+
+}
+
+
+ul .social-icons {
+  margin: 0;
+  padding-left: 0;
+}
+
+.social-item {
+  display: inline-block;
+
+}
 .footer-link {
   font-size: 18px;
   line-height: 22px;
@@ -237,10 +283,12 @@ a {
 }
 
 .social-item {
+  padding: 10px;
 
 }
 .social-link {
   display: block;
+
   width: 40px;
   height: 40px;
   background-image: url(../images/icon-twitter.svg);
@@ -250,12 +298,14 @@ a {
 
 .social-text {
   text-align: center;
-  opacity: 0;
+  /* opacity: 0; */
+  font-size: 0;
 
 }
 
 
 .copyright {
+  margin: 0;
   font-size: 18px;
   line-height: 22px;
   color: #fff;
