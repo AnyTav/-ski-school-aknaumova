@@ -60,6 +60,7 @@ a {
 .header-wrap {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header-bg-veil {
@@ -167,7 +168,7 @@ a {
   font-weight: normal;
 }
 
-/* ----------Slogan----------- */
+/* ----------SLOGAN----------- */
 
 .slogan{
 
@@ -187,15 +188,10 @@ a {
 
 
 .slogan-link{
-
-
-
   font-size: 36px;
   line-height: 44px;
   font-weight: 500;
   text-decoration: none;
-
-
 }
 
 .slogan-text {
@@ -215,16 +211,13 @@ a {
 }
 
 .slogan-pic {
-  width: 297px;
+  width: 100%;
   margin-top: 130px;
 
 
 }
 
-.copyright {
-  font-size: 18px;
-  line-height: 22px;
-}
+
 
 /* -----------------Footer----------------- */
 
@@ -238,14 +231,20 @@ a {
  .footer-wrap {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+
 
 }
 
 .icons-wrap {
+  display: flex;
+  align-items: center;
+
 
 }
 
 .footer-link {
+  margin-right: 30px;
   font-size: 18px;
   line-height: 22px;
   font-weight: 500;
@@ -255,40 +254,20 @@ a {
 
 
 .social-icons {
+  margin: 0 0 0 10px;
+  padding: 0;
   list-style: none;
 
 }
 
-
-ul .social-icons {
-  margin: 0;
-  padding-left: 0;
-}
-
 .social-item {
   display: inline-block;
-
-}
-.footer-link {
-  font-size: 18px;
-  line-height: 22px;
-  font-weight: 500;
-  text-decoration: none;
-  color: #fff;
-}
-
-
-.social-icons {
-
-}
-
-.social-item {
   padding: 10px;
 
 }
+
 .social-link {
   display: block;
-
   width: 40px;
   height: 40px;
   background-image: url(../images/icon-twitter.svg);
@@ -298,10 +277,11 @@ ul .social-icons {
 
 .social-text {
   text-align: center;
-  /* opacity: 0; */
+  opacity: 0;
   font-size: 0;
 
 }
+
 
 
 .copyright {
@@ -309,6 +289,7 @@ ul .social-icons {
   font-size: 18px;
   line-height: 22px;
   color: #fff;
-  text-align: right;
+
+
 
 }
