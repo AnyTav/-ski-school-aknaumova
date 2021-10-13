@@ -30,9 +30,13 @@
 * {
   box-sizing: border-box;
 }
+hr {
+  margin: 0;
+}
 
 /* -----------BODY---------------- */
 body {
+  margin: 0;
   font-family: 'Montserrat';
   font-weight: 500;
   color: #060D10;
@@ -53,11 +57,10 @@ a {
 .btn {
   display: inline-block;
   padding: 20px 107px;
-  text-align: center;
   font-size: 36px;
   line-height: 44px;
   font-weight: 500;
-  border: 1px solid #000;
+  border: 3px solid #000;
   text-decoration: none;
 }
 
@@ -143,10 +146,12 @@ a {
 
 .benefits {
 
+  background-color: rgba(102, 209, 255, .1);
 }
 
 .benefits-heading {
-  margin: 170px 0 100px 0;
+  margin: 0;
+  padding: 170px 0 100px 0;
   font-family: 'Oswald', sans-serif;
   font-size: 48px;
   line-height: 80px;
@@ -186,18 +191,21 @@ a {
 
 /* ----------SLOGAN----------- */
 
-.slogan{
-
+.slogan {
+  /* background-color: rgba(102, 209, 255, .1); */
+  background: linear-gradient(208.35deg, rgba(102, 209, 255, .1), 43.85%, rgba(196, 196, 196, 0) 43.86%);
+  text-align: center;
 }
 
 .slogan-heading {
-  margin-top: 170px;
-  margin-bottom: 60px;
+  margin: 0;
+  padding-top: 170px;
+  padding-bottom: 60px;
   font-family: 'Oswald', sans-serif;
   font-size: 48px;
   line-height: 80px;
   font-weight: 500;
-  text-align: center;
+
   text-transform: uppercase;
 }
 
@@ -207,6 +215,7 @@ a {
   display: flex;
   justify-content: space-between;
   margin-top: 130px;
+  padding-bottom: 180px;
 }
 
 .slogan-pic {
@@ -227,7 +236,7 @@ a {
 
 .footer{
   background-color: #060D10;
-  margin-top: 180px;
+  /* margin-top: 180px; */
   padding: 35px 0;
 
 }
